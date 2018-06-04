@@ -1,2 +1,2 @@
 # CArWash
-asd
+Proyecto HCI CarWash
