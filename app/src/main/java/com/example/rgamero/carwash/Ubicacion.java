@@ -1,8 +1,11 @@
 package com.example.rgamero.carwash;
 
+import android.media.Image;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdate;
@@ -19,6 +22,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private View popup = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
     }
 
     @Override
@@ -66,6 +71,31 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 .position(carWashRapidito)
                 .flat(true)
         );
+
+        mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
+            @Override
+            public View getInfoWindow(Marker marker) {
+                return null;
+            }
+
+            @Override
+            public View getInfoContents(Marker marker) {
+                if (popup == null){
+                    popup = getLayoutInflater().inflate(R.layout.popupcarwash1,null);
+                }
+                TextView txtView = (TextView) popup.findViewById(R.id.titlepopup);
+                ImageView imgView = (ImageView) popup.findViewById(R.id.iconpopup);
+                txtView.setText(marker.getTitle());
+                imgView.setImageResource(R.mipmap.ic_carwash);
+                txtView = (TextView)popup.findViewById(R.id.snippetpopup);
+                txtView.setText(marker.getSnippet());
+
+                return (popup);
+            }
+        });
+
+
+
 
     }
 
