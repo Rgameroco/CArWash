@@ -66,7 +66,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
         LatLng carWashRapidito = new LatLng(-16.428462, -71.559458);
         mMap.addMarker(new MarkerOptions().position(carWashRapidito)
                 .title("CarWash Rapidito")
-                .snippet("precio : 15 soles"+"\n"+"Valoracion 4/5")
+                .snippet("Distancia: 15 minutos"+"\n"+"Precio : 15 soles"+"\n"+"Dirección: Av Siempre Viva 105 hunter"+"\n"+"Valoracion 4/5"+"\n")
                 .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash))
                 .position(carWashRapidito)
                 .flat(true)
