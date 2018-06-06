@@ -7,7 +7,7 @@
     tools:context="com.example.rgamero.carwash.PerfilActivity">
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/txtV_perfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -22,79 +22,118 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/txtV_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:text="Nombres"
-        tools:layout_editor_absoluteX="87dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtV_nombreC"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="189dp" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/txtV_correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
         android:text="Correo Electronico"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        tools:layout_editor_absoluteX="27dp" />
+        app:layout_constraintEnd_toStartOf="@+id/txtV_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_nombre" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/txtV_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
         android:text="Contraseña"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
-        tools:layout_editor_absoluteX="72dp" />
+        app:layout_constraintEnd_toStartOf="@+id/txtV_pass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_correo" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/txtV_mcars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:text="Mis Carros"
-        app:layout_constraintTop_toBottomOf="@+id/textView15"
-        tools:layout_editor_absoluteX="70dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cmb_carros"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_pass"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/txtV_nombreC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
         android:text="Juan Perez"
-        tools:layout_editor_absoluteX="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="189dp" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/txtV_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="jperez@ulasalle.edu.pe"
-        tools:layout_editor_absoluteX="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="244dp" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/txtV_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
         android:text="**********"
-        tools:layout_editor_absoluteX="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="290dp" />
 
     <Spinner
-        android:id="@+id/spinner3"
+        android:id="@+id/cmb_carros"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="333dp" />
+        android:layout_marginBottom="208dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
     <item>Carro 1</item>
     <item>Carro 2</item>
     <item>Carro 3</item>
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/img_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/carwashlogo"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="69dp" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_perfil"
+        app:srcCompat="@mipmap/carwashlogo" />
 </android.support.constraint.ConstraintLayout>

@@ -7,7 +7,7 @@
     tools:context="com.example.rgamero.carwash.Evaluar2Activity">
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/txtV_evalua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -20,69 +20,73 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="16dp" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView27"
-        app:srcCompat="@mipmap/sedan1"
-        tools:layout_editor_absoluteX="42dp" />
-
     <TextView
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="156dp"
         android:text="0 a 2 Casa"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        tools:layout_editor_absoluteX="143dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="358dp" />
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
         android:layout_marginTop="8dp"
         android:text="3 a 4 Lava Carros"
-        app:layout_constraintTop_toBottomOf="@+id/textView28"
-        tools:layout_editor_absoluteX="143dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:text="4 a mas CarWash"
-        app:layout_constraintTop_toBottomOf="@+id/textView29"
-        tools:layout_editor_absoluteX="143dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/img_8"
         android:layout_width="27dp"
         android:layout_height="25dp"
         android:layout_marginEnd="12dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="12dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintEnd_toStartOf="@+id/textView28"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/puntorojo"
         tools:layout_editor_absoluteY="358dp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/img_9"
         android:layout_width="27dp"
         android:layout_height="25dp"
         android:layout_marginEnd="12dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="12dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintEnd_toStartOf="@+id/textView29"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/puntorojo"
         tools:layout_editor_absoluteY="386dp" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/img_10"
+        android:layout_width="27dp"
+        android:layout_height="25dp"
         android:layout_marginEnd="12dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="12dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintEnd_toStartOf="@+id/textView30"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/puntorojo"
         tools:layout_editor_absoluteY="411dp" />
 
@@ -90,9 +94,82 @@
         android:id="@+id/btn_listo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:text="Listo"
-        app:layout_constraintTop_toBottomOf="@+id/textView30"
-        tools:layout_editor_absoluteX="131dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <ImageView
+        android:id="@+id/img_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/sedan_car"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <ImageView
+        android:id="@+id/img_3"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        app:srcCompat="@mipmap/puntoverde"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <ImageView
+        android:id="@+id/img_5"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        app:srcCompat="@mipmap/puntoverde"
+        tools:layout_editor_absoluteX="311dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        app:srcCompat="@mipmap/puntoverde"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        app:srcCompat="@mipmap/puntoverde"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <ImageView
+        android:id="@+id/img_7"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        app:srcCompat="@mipmap/puntoverde"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <ImageView
+        android:id="@+id/img_6"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        app:srcCompat="@mipmap/puntoverde"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <ImageView
+        android:id="@+id/img_4"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        app:srcCompat="@mipmap/puntoverde"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="87dp" />
 
 </android.support.constraint.ConstraintLayout>

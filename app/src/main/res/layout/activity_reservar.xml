@@ -7,70 +7,99 @@
     tools:context="com.example.rgamero.carwash.ReservarActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtV_selec"
         android:layout_width="178dp"
         android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Seleccione Su Auto"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:layout_editor_absoluteX="53dp" />
+        app:layout_constraintEnd_toStartOf="@+id/cmb_seleccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_cwexpres" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtV_res"
         android:layout_width="132dp"
         android:layout_height="62dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Reservar"
         android:textSize="30sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="126dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txtV_cwexpres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Car Wash Expres"
         android:textSize="30sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:layout_editor_absoluteX="79dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_res" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/txtV_selectipo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Seleccione Tipo de Lavado"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toStartOf="@+id/cmb_tipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_selec" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/txtV_hora"
         android:layout_width="71dp"
         android:layout_height="19dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="60dp"
         android:text="Hora"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        tools:layout_editor_absoluteX="68dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_selectipo" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/txtV_fecha"
         android:layout_width="54dp"
         android:layout_height="38dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
         android:text="Fecha"
-        app:layout_constraintTop_toBottomOf="@+id/cmb_tipo"
-        tools:layout_editor_absoluteX="277dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtV_hora"
+        app:layout_constraintTop_toBottomOf="@+id/cmb_tipo" />
 
     <Spinner
         android:id="@+id/cmb_seleccion"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:layout_editor_absoluteX="268dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_cwexpres" />
         <item>Carro 1</item>
         <item>Carro 2</item>
         <item>Carro 3</item>
@@ -79,9 +108,11 @@
         android:id="@+id/cmb_tipo"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/cmb_seleccion"
-        tools:layout_editor_absoluteX="268dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cmb_seleccion" />
         <item>Interior</item>
         <item>Exterior</item>
 
@@ -89,17 +120,24 @@
         android:id="@+id/cld_fecha"
         android:layout_width="207dp"
         android:layout_height="149dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        tools:layout_editor_absoluteX="171dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_fecha" />
 
     <Spinner
         android:id="@+id/cmb_hora"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:layout_editor_absoluteX="53dp" />
+        app:layout_constraintEnd_toStartOf="@+id/cld_fecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_hora" />
         <item>9:00</item>
         <item>10:00</item>
         <item>11:00</item>
@@ -107,43 +145,65 @@
         <item>13:00</item>
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtV_testimado"
+        android:layout_width="132dp"
         android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Tiempo Estimado"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/cmb_hora"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toStartOf="@+id/cld_fecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cmb_hora" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/txtV_precio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Precio estimado"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/txt_tiempo"
-        tools:layout_editor_absoluteX="32dp" />
+        app:layout_constraintEnd_toStartOf="@+id/cld_fecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tiempo" />
 
     <EditText
         android:id="@+id/txt_tiempo"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        tools:layout_editor_absoluteX="76dp" />
+        app:layout_constraintEnd_toStartOf="@+id/cld_fecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_testimado" />
 
     <EditText
         android:id="@+id/txt_precio"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        tools:layout_editor_absoluteX="76dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cld_fecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_precio" />
 
 </android.support.constraint.ConstraintLayout>
