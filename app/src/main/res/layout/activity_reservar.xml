@@ -66,7 +66,7 @@
 
     <Spinner
         android:id="@+id/cmb_seleccion"
-        android:layout_width="100"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
@@ -77,7 +77,7 @@
 
     <Spinner
         android:id="@+id/cmb_tipo"
-        android:layout_width="100"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/cmb_seleccion"
@@ -95,7 +95,7 @@
 
     <Spinner
         android:id="@+id/cmb_hora"
-        android:layout_width="100"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
@@ -128,7 +128,7 @@
 
     <EditText
         android:id="@+id/txt_tiempo"
-        android:layout_width="50"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
@@ -138,7 +138,7 @@
 
     <EditText
         android:id="@+id/txt_precio"
-        android:layout_width="50"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
