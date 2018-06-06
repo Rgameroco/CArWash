@@ -47,7 +47,10 @@
         <activity android:name=".PerfilActivity" />
         <activity android:name=".MisCarrosActivity" />
         <activity android:name=".AgregarCarroActivity" />
-        <activity android:name=".FavoritosActivity"></activity>
+        <activity android:name=".FavoritosActivity" />
+        <activity android:name=".EvaluarActivity" />
+        <activity android:name=".Evaluar2Activity" />
+        <activity android:name=".MasInformacionActivity"></activity>
     </application>
 
 </manifest>
