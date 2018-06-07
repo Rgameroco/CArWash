@@ -47,6 +47,9 @@
         <activity android:name=".EvaluarActivity" />
         <activity android:name=".Evaluar2Activity" />
         <activity android:name=".MasInformacionActivity" />
+        <activity android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme"
+            />
     </application>
 
 </manifest>
