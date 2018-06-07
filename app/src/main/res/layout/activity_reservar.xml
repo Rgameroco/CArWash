@@ -100,9 +100,12 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtV_cwexpres" />
-        <item>Carro 1</item>
-        <item>Carro 2</item>
-        <item>Carro 3</item>
+
+    <item>Carro 1</item>
+
+    <item>Carro 2</item>
+
+    <item>Carro 3</item>
 
     <Spinner
         android:id="@+id/cmb_tipo"
@@ -113,8 +116,10 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cmb_seleccion" />
-        <item>Interior</item>
-        <item>Exterior</item>
+
+    <item>Interior</item>
+
+    <item>Exterior</item>
 
     <CalendarView
         android:id="@+id/cld_fecha"
@@ -138,11 +143,16 @@
         app:layout_constraintEnd_toStartOf="@+id/cld_fecha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtV_hora" />
-        <item>9:00</item>
-        <item>10:00</item>
-        <item>11:00</item>
-        <item>12:00</item>
-        <item>13:00</item>
+
+    <item>9:00</item>
+
+    <item>10:00</item>
+
+    <item>11:00</item>
+
+    <item>12:00</item>
+
+    <item>13:00</item>
 
     <TextView
         android:id="@+id/txtV_testimado"

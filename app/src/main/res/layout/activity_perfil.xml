@@ -119,8 +119,11 @@
         android:layout_marginRight="72dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
     <item>Carro 1</item>
+
     <item>Carro 2</item>
+
     <item>Carro 3</item>
 
     <ImageView

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/buscar"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/title_buscar"
+        />
+
+    <item
+        android:id="@+id/comparar"
+        android:icon="@drawable/ic_compare_arrows_black_24dp"
+        android:title="@string/title_comparar" />
+
+    <item
+        android:id="@+id/localizacion"
+        android:icon="@drawable/ic_place_black_24dp"
+        android:title="@string/title_re_ubicar" />
+
+    <item
+        android:id="@+id/relocalizacion"
+        android:icon="@drawable/ic_my_location_black_24dp"
+        android:title="@string/title_reajustar" />
+
+</menu>

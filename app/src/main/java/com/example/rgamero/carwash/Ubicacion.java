@@ -1,12 +1,12 @@
 package com.example.rgamero.carwash;
 
-import android.media.Image;
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.ImageButton;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -18,11 +18,14 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import android.widget.Button;
 
 public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private View popup = null;
+
+    private ImageButton btnMarcador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,15 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        Button btn = (Button) findViewById(R.id.buscar);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),ReservarActivity.class);
+                finish();
+                startActivityForResult(intent,0);
+            }
+        });
     }
 
     @Override
@@ -89,7 +101,6 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 imgView.setImageResource(R.mipmap.ic_carwash);
                 txtView = (TextView)popup.findViewById(R.id.snippetpopup);
                 txtView.setText(marker.getSnippet());
-
                 return (popup);
             }
         });
@@ -97,8 +108,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
 
 
 
-    }
-
-
 
 }
+
+    }

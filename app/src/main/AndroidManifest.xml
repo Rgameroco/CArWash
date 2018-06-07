@@ -38,10 +38,6 @@
         <activity
             android:name=".Ubicacion"
             android:label="@string/title_activity_ubicacion" />
-        <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RegistroActivity" />
         <activity android:name=".ReservarActivity" />
         <activity android:name=".PerfilActivity" />
@@ -50,7 +46,7 @@
         <activity android:name=".FavoritosActivity" />
         <activity android:name=".EvaluarActivity" />
         <activity android:name=".Evaluar2Activity" />
-        <activity android:name=".MasInformacionActivity"></activity>
+        <activity android:name=".MasInformacionActivity" />
     </application>
 
 </manifest>

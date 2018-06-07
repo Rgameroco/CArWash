@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">carWash</string>
+    <string name="app_name">CarWash</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_ubicacion">Map</string>
     <string name="title_activity_drawer_layout">DrawerLayout</string>
@@ -9,4 +9,12 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_navegacion_maps">NavegacionMaps</string>
+    <string name="title_home">Reajuste</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_buscar">Buscar</string>
+    <string name="title_comparar">Comparar</string>
+    <string name="title_re_ubicar">Re Ubicar</string>
+    <string name="title_reajustar">Reajuste</string>
 </resources>
