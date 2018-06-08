@@ -30,7 +30,7 @@
         android:visibility="visible"
         app:srcCompat="@android:drawable/ic_menu_agenda" />
     <Button
-        android:id="@+id/Ruta"
+        android:id="@+id/btn_ruta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

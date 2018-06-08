@@ -89,6 +89,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 startActivityForResult(intent,0);
             }
         });
+
     }
 
     @Override
@@ -150,15 +151,6 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 return (popup);
             }
         });
-       /* mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-            @Override
-            public boolean onMarkerClick(Marker marker) {
-                int position = (int)(markador.getTag());
-                Intent intent = new Intent(Ubicacion.this, MasInformacionActivity.class);
-                startActivity(intent);
-                return false;
-            }
-        });*/
 
     }
 
@@ -168,7 +160,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
         mMap = googleMap;
         mMap.addPolyline(new PolylineOptions().add(
                 hcm,
-                new LatLng(-16.426713, -71.559810),//punto medio
+                new LatLng(-16.424327, -71.559810),//punto medio
                 new LatLng(-16.427783, -71.560438),//punto medio
                 new LatLng(-16.428462, -71.559458)
         )
