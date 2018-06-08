@@ -9,8 +9,10 @@ import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.view.View.OnClickListener;
@@ -51,6 +53,8 @@ public class ReservarActivity extends AppCompatActivity {
 
         updateTextLabel();
         btnCrearReserva();
+        llenarSpinner();
+        llenarSpinner2();
     }
 
 
@@ -165,6 +169,21 @@ public class ReservarActivity extends AppCompatActivity {
                 alertDialog.show();
             }
         });
+    }
+
+    public void llenarSpinner(){
+       Spinner opciones = (Spinner) findViewById(R.id.cmb_tipo);
+
+        ArrayAdapter<CharSequence>  adapter = ArrayAdapter.createFromResource(this, R.array.opciones, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.preference_category);
+        opciones.setAdapter(adapter);
+    }
+    public void llenarSpinner2(){
+       /* Spinner opciones2 = (Spinner) findViewById(R.id.cmb_carros);
+
+        ArrayAdapter<CharSequence>  adapter = ArrayAdapter.createFromResource(this, R.array.opciones, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.preference_category);
+        opciones2.setAdapter(adapter);*/
     }
     }
 

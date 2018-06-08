@@ -38,4 +38,13 @@
         android:layout_marginBottom="73dp"
         android:text="Ruta" />
 
+    <ImageButton
+        android:id="@+id/btn_masinformacion"
+        android:layout_width="31dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
 </RelativeLayout>

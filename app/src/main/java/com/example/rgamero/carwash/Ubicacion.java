@@ -1,5 +1,6 @@
 package com.example.rgamero.carwash;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -90,6 +91,9 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
             }
         });
 
+        btnInfo();
+
+
     }
 
     @Override
@@ -175,5 +179,15 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 .color(Color.green(10))
         );
 
+    }
+    public void btnInfo(){
+        ImageButton button = (ImageButton) findViewById(R.id.btn_masinformacion);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),MasInformacionActivity.class);
+                startActivityForResult(intent,0);
+            }
+        });
     }
 }
