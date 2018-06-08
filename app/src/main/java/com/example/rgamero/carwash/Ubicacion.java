@@ -9,7 +9,9 @@ import android.support.v4.app.FragmentActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -30,6 +32,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
     private View popup = null;
 
 
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -47,7 +50,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                     });
                     return true;
                 case R.id.comparar:
- 
+
                     return true;
                 case R.id.localizacion:
 
@@ -64,14 +67,21 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ubicacion);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+
+        ImageButton btn = (ImageButton) findViewById(R.id.btn_registrarmapa);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),EvaluarActivity.class);
+                startActivityForResult(intent,0);
+            }
+        });
     }
 
     @Override
@@ -133,7 +143,6 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 return (popup);
             }
         });
-
        /* mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
