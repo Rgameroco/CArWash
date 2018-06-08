@@ -18,7 +18,7 @@ public class ReservarActivity extends AppCompatActivity {
         String [] Opciones ={"9:00","10:00","11:00","12:00","13:00"};
         spinner.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item));
 
-        Spinner spinner2 =(Spinner) findViewById(R.id.cmb_tipo;
+        Spinner spinner2 =(Spinner) findViewById(R.id.cmb_tipo);
         String [] Opciones2 ={"Interior","Exterior"};
         spinner2.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item));
 
