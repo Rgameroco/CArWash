@@ -39,7 +39,6 @@
             android:name=".Ubicacion"
             android:label="@string/title_activity_ubicacion" />
         <activity android:name=".RegistroActivity" />
-        <activity android:name=".ReservarActivity" />
         <activity android:name=".PerfilActivity" />
         <activity android:name=".MisCarrosActivity" />
         <activity android:name=".AgregarCarroActivity" />
