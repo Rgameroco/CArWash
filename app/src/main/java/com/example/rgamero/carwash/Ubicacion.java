@@ -1,6 +1,7 @@
 package com.example.rgamero.carwash;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.internal.BottomNavigationItemView;
@@ -23,6 +24,8 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
 
@@ -47,7 +50,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                     });
                     return true;
                 case R.id.comparar:
- 
+
                     return true;
                 case R.id.localizacion:
 
@@ -57,8 +60,12 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                     return true;
             }
             return false;
+
+
         }
+
     };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -146,4 +153,26 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
 
     }
 
+    LatLng hcm = new LatLng(-16.424327, -71.556138);//universidad
+
+    public void Ruta(GoogleMap googleMap) {
+        mMap = googleMap;
+        mMap.addPolyline(new PolylineOptions().add(
+                hcm,
+                new LatLng(-16.426713, -71.559810),//punto medio
+                new LatLng(-16.427783, -71.560438),//punto medio
+                new LatLng(-16.428462, -71.559458)
+        )
+                        .width(10)
+                        .color(Color.green(10))
+        );
+        mMap.addPolyline(new PolylineOptions().add(
+                hcm,
+                new LatLng(-16.421492, -71.553064)
+        )
+                .width(10)
+                .color(Color.green(10))
+        );
+
+    }
 }
