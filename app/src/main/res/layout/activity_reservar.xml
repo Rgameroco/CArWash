@@ -101,11 +101,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtV_cwexpres" />
 
-    <item>Carro 1</item>
-
-    <item>Carro 2</item>
-
-    <item>Carro 3</item>
 
     <Spinner
         android:id="@+id/cmb_tipo"
@@ -117,19 +112,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cmb_seleccion" />
 
-    <item>Interior</item>
 
-    <item>Exterior</item>
 
     <CalendarView
         android:id="@+id/cld_fecha"
         android:layout_width="207dp"
         android:layout_height="149dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtV_fecha" />
+        app:layout_constraintTop_toBottomOf="@+id/txtV_fecha"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/cmb_hora"
@@ -144,15 +140,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtV_hora" />
 
-    <item>9:00</item>
-
-    <item>10:00</item>
-
-    <item>11:00</item>
-
-    <item>12:00</item>
-
-    <item>13:00</item>
 
     <TextView
         android:id="@+id/txtV_testimado"
