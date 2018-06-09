@@ -50,6 +50,7 @@
             android:theme="@style/AppTheme.CustomTheme"
             />
         <activity android:name=".PopupCarWash"/>
+        <activity android:name=".ReservarActivity"></activity>
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class MasInformacionActivity extends AppCompatActivity {
 
@@ -33,6 +34,7 @@ public class MasInformacionActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(MasInformacionActivity.this,"LLamando ReservarActivity",Toast.LENGTH_SHORT);
                 Intent intent = new Intent(v.getContext(),ReservarActivity.class);
                 startActivityForResult(intent,0);
             }

@@ -90,10 +90,6 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 startActivityForResult(intent,0);
             }
         });
-
-        btnInfo();
-
-
     }
 
     @Override
@@ -155,7 +151,13 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 return (popup);
             }
         });
-
+        mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+            @Override
+            public void onInfoWindowClick(Marker marker) {
+                Intent info = new Intent(getApplicationContext(), MasInformacionActivity.class);
+                startActivity(info);
+            }
+        });
     }
 
     LatLng hcm = new LatLng(-16.424327, -71.556138);//universidad
@@ -179,15 +181,5 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 .color(Color.green(10))
         );
 
-    }
-    public void btnInfo(){
-        ImageButton button = (ImageButton) findViewById(R.id.btn_masinformacion);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),MasInformacionActivity.class);
-                startActivityForResult(intent,0);
-            }
-        });
     }
 }
