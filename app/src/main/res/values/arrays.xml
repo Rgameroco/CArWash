@@ -5,6 +5,11 @@
         <item>Interior</item>
         <item>Salon</item>
     </string-array>
+    <string-array name="carros">
+        <item>Sedan</item>
+        <item>4x4</item>
+        <item>Tico</item>
+    </string-array>
     <string-array name="opcionesList">
         <item>Lavado Simple 10 soles</item>
         <item>Lavado Salon 15 soles </item>

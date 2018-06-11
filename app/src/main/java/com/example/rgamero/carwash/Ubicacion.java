@@ -50,6 +50,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                         public void onClick(View v) {
                             Intent intent = new Intent(v.getContext(), Pop.class);
                             startActivityForResult(intent, 0);
+                            finish();
                         }
                     });
                     return true;
@@ -88,6 +89,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),ReservarActivity.class);
                 startActivityForResult(intent,0);
+                finish();
             }
         });
     }
@@ -156,6 +158,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
             public void onInfoWindowClick(Marker marker) {
                 Intent info = new Intent(getApplicationContext(), MasInformacionActivity.class);
                 startActivity(info);
+                finish();
             }
         });
     }

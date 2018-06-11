@@ -6,8 +6,8 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -15,7 +15,7 @@ import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
-import android.view.View.OnClickListener;
+
 import java.text.DateFormat;
 import java.util.Calendar;
 
@@ -58,11 +58,11 @@ public class ReservarActivity extends AppCompatActivity {
     }
 
 
-    private void updateDate(){
-        new DatePickerDialog(this, d, dateTime.get(Calendar.YEAR),dateTime.get(Calendar.MONTH),dateTime.get(Calendar.DAY_OF_MONTH)).show();
+    private void updateDate() {
+        new DatePickerDialog(this, d, dateTime.get(Calendar.YEAR), dateTime.get(Calendar.MONTH), dateTime.get(Calendar.DAY_OF_MONTH)).show();
     }
 
-    private void updateTime(){
+    private void updateTime() {
         new TimePickerDialog(this, t, dateTime.get(Calendar.HOUR_OF_DAY), dateTime.get(Calendar.MINUTE), true).show();
     }
 
@@ -85,12 +85,12 @@ public class ReservarActivity extends AppCompatActivity {
         }
     };
 
-    private void updateTextLabel(){
+    private void updateTextLabel() {
         text.setText(formatDateTime.format(dateTime.getTime()));
     }
 
-    private void btnCrearReserva(){
-        Button button = (Button)findViewById(R.id.btn_registrarReserva);
+    private void btnCrearReserva() {
+        Button button = (Button) findViewById(R.id.btn_registrarReserva);
         // add button listener
         button.setOnClickListener(new View.OnClickListener() {
 
@@ -106,15 +106,15 @@ public class ReservarActivity extends AppCompatActivity {
                 // set dialog message
                 alertDialogBuilder
                         .setCancelable(false)
-                        .setPositiveButton("Si",new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,int id) {
+                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
                                 // if this button is clicked, close
                                 // current activity
                                 ReservarActivity.this.finish();
                             }
                         })
-                        .setNegativeButton("No",new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,int id) {
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
                                 // if this button is clicked, just close
                                 // the dialog box and do nothing
                                 dialog.cancel();
@@ -130,8 +130,8 @@ public class ReservarActivity extends AppCompatActivity {
         });
     }
 
-    private void btnCacncelarReserva(){
-        Button button = (Button)findViewById(R.id.btn_cancelarReserva);
+    private void btnCacncelarReserva() {
+        Button button = (Button) findViewById(R.id.btn_cancelarReserva);
         // add button listener
         button.setOnClickListener(new View.OnClickListener() {
 
@@ -147,15 +147,15 @@ public class ReservarActivity extends AppCompatActivity {
                 // set dialog message
                 alertDialogBuilder
                         .setCancelable(false)
-                        .setPositiveButton("Si",new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,int id) {
+                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
                                 // if this button is clicked, close
                                 // current activity
                                 ReservarActivity.this.finish();
                             }
                         })
-                        .setNegativeButton("No",new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,int id) {
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
                                 // if this button is clicked, just close
                                 // the dialog box and do nothing
                                 dialog.cancel();
@@ -171,19 +171,22 @@ public class ReservarActivity extends AppCompatActivity {
         });
     }
 
-    public void llenarSpinner(){
-       Spinner opciones = (Spinner) findViewById(R.id.cmb_tipo);
-
-        ArrayAdapter<CharSequence>  adapter = ArrayAdapter.createFromResource(this, R.array.opciones, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.preference_category);
+    public void llenarSpinner() {
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.opciones, android.R.layout.simple_spinner_item);
+        Spinner opciones = (Spinner) findViewById(R.id.cmb_tipo);
         opciones.setAdapter(adapter);
-    }
-    public void llenarSpinner2(){
-       /* Spinner opciones2 = (Spinner) findViewById(R.id.cmb_carros);
-
-        ArrayAdapter<CharSequence>  adapter = ArrayAdapter.createFromResource(this, R.array.opciones, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.preference_category);
-        opciones2.setAdapter(adapter);*/
+
     }
+
+    public void llenarSpinner2() {
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.carros, android.R.layout.simple_spinner_item);
+
+        Spinner opciones2 = (Spinner) findViewById(R.id.cmb_seleccion);
+        opciones2.setAdapter(adapter);
+
+        adapter.setDropDownViewResource(android.R.layout.preference_category);
+
     }
+}
 

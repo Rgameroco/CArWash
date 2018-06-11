@@ -27,6 +27,7 @@ public class MasInformacionActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.opcionesList, android.R.layout.simple_selectable_list_item);
         adapter.setDropDownViewResource(android.R.layout.preference_category);
         opciones.setAdapter(adapter);
+
     }
 
     public void btnReservar(){
@@ -37,6 +38,7 @@ public class MasInformacionActivity extends AppCompatActivity {
                 Toast.makeText(MasInformacionActivity.this,"LLamando ReservarActivity",Toast.LENGTH_SHORT);
                 Intent intent = new Intent(v.getContext(),ReservarActivity.class);
                 startActivityForResult(intent,0);
+                finish();
             }
         });
     }
