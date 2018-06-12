@@ -1,6 +1,5 @@
 package com.example.rgamero.carwash;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,7 +12,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -34,7 +32,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private View popup = null;
-
+    private Polyline mapLinea;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -95,8 +93,8 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),ReservarActivity.class);
-                startActivityForResult(intent,0);
+                Intent intent = new Intent(v.getContext(), ReservarActivity.class);
+                startActivityForResult(intent, 0);
 
 
             }
@@ -161,7 +159,19 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 txtView.setText(marker.getSnippet());
                 ratingBar.setNumStars(5);
                 ratingBar.setRating(3);
+
+                mapLinea = mMap.addPolyline(new PolylineOptions()
+                        .add(new LatLng(-16.421492, -71.553064), new LatLng(-16.424327, -71.556138))
+                        .width(5)
+                        .color(Color.RED));
+
                 return (popup);
+            }
+        });
+        mMap.setOnInfoWindowCloseListener(new GoogleMap.OnInfoWindowCloseListener() {
+            @Override
+            public void onInfoWindowClose(Marker marker) {
+                mapLinea.remove();
             }
         });
         mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
@@ -173,17 +183,8 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
             }
         });
 
-        Button btn = (Button) findViewById(R.id.btn_ruta);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),Ruta.class);
-                startActivityForResult(intent,0);
 
-            }
-        });
     }
-
 
 
 }

@@ -53,6 +53,7 @@
         <activity android:name=".ReservarActivity" />
         <activity android:name=".CompararActivity" />
         <activity android:name=".Ruta"></activity>
+        <activity android:name="PopUpComparar"></activity>
     </application>
 
 </manifest>

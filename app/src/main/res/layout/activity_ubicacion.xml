@@ -33,23 +33,4 @@
         android:visibility="visible"
         app:srcCompat="@android:drawable/ic_menu_agenda" />
 
-    <Button
-        android:id="@+id/btn_ruta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="73dp"
-        android:onClick="cambio"
-        android:text="Ruta" />
-
-    <ImageView
-        android:id="@+id/imgV_ruta"
-        android:layout_width="match_parent"
-        android:layout_height="448dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="119dp"
-        app:srcCompat="@android:color/transparent" />
-
 </RelativeLayout>

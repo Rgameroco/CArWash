@@ -69,6 +69,7 @@ public class CompararActivity extends FragmentActivity implements OnMapReadyCall
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         btnComparar();
+
     }
 
     @Override
@@ -139,13 +140,14 @@ public class CompararActivity extends FragmentActivity implements OnMapReadyCall
     }
 
     public void btnComparar(){
-     /*   Button btnCompararObjeto = (Button) findViewById(R.id.btn_compararmapa);
-        btnCompararObjeto.setOnClickListener(new View.OnClickListener() {
+        Button buttonComparr = (Button) findViewById(R.id.btn_compararmapa) ;
+        buttonComparr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),PopComparar.class);
+                Intent intent = new Intent(v.getContext(),PopUpComparar.class);
                 startActivityForResult(intent,0);
             }
-        });*/
+        });
     }
+
 }
