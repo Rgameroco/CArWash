@@ -25,6 +25,7 @@ public class PopUpComparar extends Activity {
         int ancho = displayMetrics.heightPixels;
         getWindow().setLayout((int)(alto*.9),(int) (ancho*.8));
         llenarGrilla();
+        btnReservar();
     }
 
     String[] valores = {
