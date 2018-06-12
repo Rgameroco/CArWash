@@ -46,12 +46,13 @@
         <activity android:name=".EvaluarActivity" />
         <activity android:name=".Evaluar2Activity" />
         <activity android:name=".MasInformacionActivity" />
-        <activity android:name=".Pop"
-            android:theme="@style/AppTheme.CustomTheme"
-            />
-        <activity android:name=".PopupCarWash"/>
-        <activity android:name=".ReservarActivity"></activity>
-        <activity android:name=".CompararActivity"></activity>
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".PopupCarWash" />
+        <activity android:name=".ReservarActivity" />
+        <activity android:name=".CompararActivity" />
+        <activity android:name=".Ruta"></activity>
     </application>
 
 </manifest>
