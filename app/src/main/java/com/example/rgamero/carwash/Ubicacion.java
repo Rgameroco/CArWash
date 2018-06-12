@@ -50,12 +50,20 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                         public void onClick(View v) {
                             Intent intent = new Intent(v.getContext(), Pop.class);
                             startActivityForResult(intent, 0);
-                            finish();
+
                         }
                     });
                     return true;
                 case R.id.comparar:
+                    BottomNavigationItemView btnComprar = (BottomNavigationItemView) findViewById(R.id.comparar);
+                    btnComprar.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(v.getContext(), CompararActivity.class);
+                            startActivityForResult(intent, 0);
 
+                        }
+                    });
                     return true;
                 case R.id.localizacion:
 
@@ -79,6 +87,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
@@ -89,7 +98,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),ReservarActivity.class);
                 startActivityForResult(intent,0);
-                finish();
+
             }
         });
     }
@@ -158,7 +167,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
             public void onInfoWindowClick(Marker marker) {
                 Intent info = new Intent(getApplicationContext(), MasInformacionActivity.class);
                 startActivity(info);
-                finish();
+
             }
         });
     }

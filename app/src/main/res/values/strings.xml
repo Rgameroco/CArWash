@@ -18,4 +18,5 @@
     <string name="title_re_ubicar">Re Ubicar</string>
     <string name="title_reajustar">Reajuste</string>
     <string name="desea_confirmar_reserva">¿Desea confirmar reserva?</string>
+    <string name="title_activity_comparar">Map</string>
 </resources>

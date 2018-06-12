@@ -53,6 +53,7 @@ public class ReservarActivity extends AppCompatActivity {
 
         updateTextLabel();
         btnCrearReserva();
+        btnCacncelarReserva();
         llenarSpinner();
         llenarSpinner2();
     }
@@ -142,7 +143,7 @@ public class ReservarActivity extends AppCompatActivity {
                         context);
 
                 // set title
-                alertDialogBuilder.setTitle("Desea realizar su reserva");
+                alertDialogBuilder.setTitle("Desea cancelar su reserva");
 
                 // set dialog message
                 alertDialogBuilder

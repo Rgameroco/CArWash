@@ -11,7 +11,7 @@
         android:layout_height="match_parent" />
 
     <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
+        android:id="@+id/navigationubi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -19,24 +19,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/navigation" />
-
-    <ImageButton
-        android:id="@+id/btn_registrarmapa"
-        android:layout_width="31dp"
-        android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:visibility="visible"
-        app:srcCompat="@android:drawable/ic_menu_agenda" />
+        app:menu="@menu/navigationubicacion" />
 
     <Button
-        android:id="@+id/btn_ruta"
+        android:id="@+id/btn_compararmapa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/navigationubi"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="73dp"
-        android:text="Ruta" />
+        android:text="COMPARAR" />
 
 </RelativeLayout>
