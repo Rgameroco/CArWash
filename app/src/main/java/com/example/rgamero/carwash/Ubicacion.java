@@ -107,6 +107,17 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         CameraUpdate zoom = CameraUpdateFactory.zoomTo(15);
+        //Marcador LEJANO
+
+
+        LatLng CarWashLejano = new LatLng(-16.428921, -71.556258);
+        mMap.addMarker(new MarkerOptions().position(CarWashLejano)
+                .title("CarWash LEJANO")
+                .snippet("Distancia: 25 minutos" + "\n" + "Tiempo: 20 minutos" + "\n" + "Precio : 15 soles" + "\n" + "Dirección: Av Siempre Viva 105 hunter" + "\n" + "Telefono: 9899945" + "\n")
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash_rojo))
+                .position(CarWashLejano)
+                .flat(true)
+        );
         // Add a marker in Lasalle and move the camera
         LatLng universidadLasalle = new LatLng(-16.424327, -71.556138);
         final Marker markador = mMap.addMarker(new MarkerOptions().position(universidadLasalle).title("Universidad La Salle"));
@@ -124,7 +135,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(carWashExpress)
                 .title("CarWash Express")
                 .snippet("Precio : 14 soles" + "\n" + "Tiempo: 15 minutos" + "\n" + "Distancia: 10 minutos" + "\n" + "Dirección: Av Springfield 555 hunter" + "\n" + "Telefono: 9899945" + "\n")
-                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash))
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash_verde))
                 .position(carWashExpress)
                 .flat(true)
         );
@@ -134,10 +145,11 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(carWashRapidito)
                 .title("CarWash Rapidito")
                 .snippet("Distancia: 15 minutos" + "\n" + "Tiempo: 12 minutos" + "\n" + "Precio : 15 soles" + "\n" + "Dirección: Av Siempre Viva 105 hunter" + "\n" + "Telefono: 9899945" + "\n")
-                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash))
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash_verde))
                 .position(carWashRapidito)
                 .flat(true)
         );
+
 
         mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
             @Override

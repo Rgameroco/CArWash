@@ -92,7 +92,7 @@ public class CompararActivity extends FragmentActivity implements OnMapReadyCall
         //Marcador Express
         LatLng carWashExpress = new LatLng(-16.421492, -71.553064);
         mMap.addMarker(new MarkerOptions().position(carWashExpress)
-                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash))
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash_verde))
                 .position(carWashExpress)
                 .flat(true)
         );
@@ -100,7 +100,7 @@ public class CompararActivity extends FragmentActivity implements OnMapReadyCall
         //Marcador Rapidito
         LatLng carWashRapidito = new LatLng(-16.428462, -71.559458);
         mMap.addMarker(new MarkerOptions().position(carWashRapidito)
-                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash))
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash_verde))
                 .position(carWashRapidito)
                 .flat(true)
         );
@@ -123,14 +123,14 @@ public class CompararActivity extends FragmentActivity implements OnMapReadyCall
                 //Marcador Express
                 LatLng carWashExpress = new LatLng(-16.421492, -71.553064);
                 mMap.addMarker(new MarkerOptions().position(carWashExpress)
-                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash))
+                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash_verdesombreado))
                         .position(carWashExpress)
                         .flat(true)
                 );
                 //Marcador Rapidito
                 LatLng carWashRapidito = new LatLng(-16.428462, -71.559458);
                 mMap.addMarker(new MarkerOptions().position(carWashRapidito)
-                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash))
+                        .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash_verdesombreado))
                         .position(carWashRapidito)
                         .flat(true)
                 );
