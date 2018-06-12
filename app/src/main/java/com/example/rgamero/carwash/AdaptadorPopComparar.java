@@ -44,5 +44,5 @@ public class AdaptadorPopComparar extends BaseAdapter{
         nombreCoche.setText(item.getContenido());
 
         return view;
-    }
+    } 
 }
