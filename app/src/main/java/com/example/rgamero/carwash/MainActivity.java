@@ -25,6 +25,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btn2 = (Button) findViewById(R.id.btn_ingresar);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),Opciones.class);
+                startActivityForResult(intent,0);
+                finish();
+            }
+        });
+
+
         TextView textView = (TextView) findViewById(R.id.txt_registrar);
     }
 
