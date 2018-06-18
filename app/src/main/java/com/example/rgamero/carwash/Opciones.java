@@ -34,7 +34,7 @@ public class Opciones extends AppCompatActivity {
         });
 
         Button btn2 = (Button) findViewById(R.id.btn_Evaluar);
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),EvaluarActivity.class);
@@ -43,7 +43,7 @@ public class Opciones extends AppCompatActivity {
             }
         });
         Button btn3 = (Button) findViewById(R.id.btn_Favoritos);
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),FavoritosActivity.class);
@@ -53,7 +53,7 @@ public class Opciones extends AppCompatActivity {
         });
 
         Button btn4 = (Button) findViewById(R.id.btn_Ubicacion);
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),Ubicacion.class);
@@ -62,7 +62,7 @@ public class Opciones extends AppCompatActivity {
             }
         });
         Button btn5= (Button) findViewById(R.id.btn_Reservar);
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),ReservarActivity.class);
