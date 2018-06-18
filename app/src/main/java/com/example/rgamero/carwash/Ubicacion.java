@@ -7,9 +7,9 @@ import android.support.annotation.NonNull;
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -199,4 +199,12 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
     }
 
 
+    public static class PopComparar extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_pop_comparar);
+        }
+    }
 }
