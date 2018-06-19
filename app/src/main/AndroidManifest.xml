@@ -57,7 +57,9 @@
             android:name=".PopUpComparar"
             android:theme="@style/AppTheme.CustomTheme" />
         <activity android:name=".Ubicacion$PopComparar" />
-        <activity android:name=".Opciones"></activity>
+        <activity
+            android:name=".Opciones"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
     </application>
 
 </manifest>

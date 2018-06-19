@@ -3,8 +3,10 @@ package com.example.rgamero.carwash;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Opciones extends AppCompatActivity {
 
@@ -13,60 +15,52 @@ public class Opciones extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opciones);
 
-        Button btn = (Button) findViewById(R.id.btn_Registrar);
-        btn.setOnClickListener(new View.OnClickListener() {
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+
+        int alto = displayMetrics.widthPixels;
+        int ancho = displayMetrics.heightPixels;
+        getWindow().setLayout((int)(alto*.9),(int) (ancho*.6));
+
+        ImageButton btn1 = (ImageButton ) findViewById(R.id.btn_Perfilimage);
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),RegistroActivity.class);
-                startActivityForResult(intent,0);
+                Intent intent = new Intent(v.getContext(), PerfilActivity.class);
+                startActivityForResult(intent, 0);
+
 
             }
         });
 
-        Button btn1 = (Button) findViewById(R.id.btn_Perfil);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),PerfilActivity.class);
-                startActivityForResult(intent,0);
-
-            }
-        });
-
-        Button btn2 = (Button) findViewById(R.id.btn_Evaluar);
+        ImageButton  btn2 = (ImageButton ) findViewById(R.id.btn_Evaluarimage);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),EvaluarActivity.class);
-                startActivityForResult(intent,0);
+                Intent intent = new Intent(v.getContext(), EvaluarActivity.class);
+                startActivityForResult(intent, 0);
+
 
             }
         });
-        Button btn3 = (Button) findViewById(R.id.btn_Favoritos);
+        ImageButton  btn3 = (ImageButton ) findViewById(R.id.btn_Favoritosimage);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),FavoritosActivity.class);
-                startActivityForResult(intent,0);
+                Intent intent = new Intent(v.getContext(), FavoritosActivity.class);
+                startActivityForResult(intent, 0);
+
 
             }
         });
 
-        Button btn4 = (Button) findViewById(R.id.btn_Ubicacion);
+        ImageButton btn4 = (ImageButton ) findViewById(R.id.btn_Ubicacionimage);
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),Ubicacion.class);
-                startActivityForResult(intent,0);
+                Intent intent = new Intent(v.getContext(), Ubicacion.class);
+                startActivityForResult(intent, 0);
 
-            }
-        });
-        Button btn5= (Button) findViewById(R.id.btn_Reservar);
-        btn5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),ReservarActivity.class);
-                startActivityForResult(intent,0);
 
             }
         });

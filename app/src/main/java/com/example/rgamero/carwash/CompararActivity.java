@@ -6,6 +6,7 @@ import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -75,6 +76,7 @@ public class CompararActivity extends FragmentActivity implements OnMapReadyCall
     @Override
     public void onMapReady(GoogleMap googleMap) {
         Toast mensaje = Toast.makeText(getApplicationContext(),"SELEECIONE LOS CARWASH A COMPARAR",Toast.LENGTH_LONG);
+        mensaje.setGravity(Gravity.CENTER,0,0);
         mensaje.show();
         mMap = googleMap;
         CameraUpdate zoom = CameraUpdateFactory.zoomTo(15);

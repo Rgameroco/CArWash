@@ -116,12 +116,6 @@
         app:layout_constraintTop_toBottomOf="@+id/txtV_contra"
         app:layout_constraintVertical_bias="0.092" />
 
-    <item>Carro 1</item>
-
-    <item>Carro 2</item>
-
-    <item>Carro 3</item>
-
     <ImageView
         android:id="@+id/img_logo"
         android:layout_width="wrap_content"

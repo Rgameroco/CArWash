@@ -89,11 +89,11 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
 
-        ImageButton btn = (ImageButton) findViewById(R.id.btn_registrarmapa);
+        ImageButton btn = (ImageButton) findViewById(R.id.btn_menu);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), ReservarActivity.class);
+                Intent intent = new Intent(v.getContext(), Opciones.class);
                 startActivityForResult(intent, 0);
 
 
