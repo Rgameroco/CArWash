@@ -7,7 +7,7 @@
     >
 
     <ImageButton
-        android:id="@+id/btn_Perfilimage"
+        android:id="@+id/btn_perfil"
         android:layout_width="57dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/btn_Evaluarimage"
@@ -67,13 +67,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.26"
         app:srcCompat="@drawable/ic_evaluar" />
-
+/>
     <TextView
         android:id="@+id/textView5"
         android:layout_width="55dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn_Perfilimage"
-        android:layout_below="@+id/btn_Perfilimage"
+        android:layout_alignStart="@+id/btn_perfil"
+        android:layout_below="@+id/btn_perfil"
         android:text="PERFIL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/btn_Perfilimage"
+        android:layout_below="@+id/btn_perfil"
         android:layout_marginEnd="36dp"
         android:text="FAVORITOS"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -127,13 +127,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.342" />
 
+
     <ImageButton
         android:id="@+id/imageButton6image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="31dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
@@ -163,5 +164,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:text="Opciones" />
+
 
 </RelativeLayout>

@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Opciones extends AppCompatActivity {
@@ -22,7 +21,7 @@ public class Opciones extends AppCompatActivity {
         int ancho = displayMetrics.heightPixels;
         getWindow().setLayout((int)(alto*.9),(int) (ancho*.6));
 
-        ImageButton btn1 = (ImageButton ) findViewById(R.id.btn_Perfilimage);
+        ImageButton  btn1 = (ImageButton ) findViewById(R.id.btn_perfil);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,6 +31,7 @@ public class Opciones extends AppCompatActivity {
 
             }
         });
+
 
         ImageButton  btn2 = (ImageButton ) findViewById(R.id.btn_Evaluarimage);
         btn2.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +64,7 @@ public class Opciones extends AppCompatActivity {
 
             }
         });
+
 
 
     }
