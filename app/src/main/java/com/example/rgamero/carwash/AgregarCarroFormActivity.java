@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class AgregarCarroFormActivity extends AppCompatActivity {
 
@@ -30,4 +31,7 @@ public class AgregarCarroFormActivity extends AppCompatActivity {
         spinner.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item));
     }
 
+    public void Mensaje(View view){
+        Toast.makeText(this , "Carro Guardado", Toast.LENGTH_SHORT);
+    }
 }

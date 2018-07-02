@@ -59,7 +59,8 @@
         <activity android:name=".Ubicacion$PopComparar" />
         <activity
             android:name=".Opciones"
-            android:theme="@style/AppTheme.CustomTheme"></activity>
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".AgregarCarroFormActivity"></activity>
     </application>
 
 </manifest>
