@@ -113,7 +113,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
         LatLng CarWashLejano = new LatLng(-16.428921, -71.556258);
         mMap.addMarker(new MarkerOptions().position(CarWashLejano)
                 .title("CarWash LEJANO")
-                .snippet("Distancia: 25 minutos" + "\n" + "Tiempo: 20 minutos" + "\n" + "Precio : 15 soles" + "\n" + "Dirección: Av Siempre Viva 105 hunter" + "\n" + "Telefono: 9899945" + "\n")
+
                 .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash_rojo))
                 .position(CarWashLejano)
                 .flat(true)
@@ -134,7 +134,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
         LatLng carWashExpress = new LatLng(-16.421492, -71.553064);
         mMap.addMarker(new MarkerOptions().position(carWashExpress)
                 .title("CarWash Express")
-                .snippet("Precio : 14 soles" + "\n" + "Tiempo: 15 minutos" + "\n" + "Distancia: 10 minutos" + "\n" + "Dirección: Av Springfield 555 hunter" + "\n" + "Telefono: 9899945" + "\n")
+
                 .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash_verde))
                 .position(carWashExpress)
                 .flat(true)
@@ -144,7 +144,7 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
         LatLng carWashRapidito = new LatLng(-16.428462, -71.559458);
         mMap.addMarker(new MarkerOptions().position(carWashRapidito)
                 .title("CarWash Rapidito")
-                .snippet("Distancia: 15 minutos" + "\n" + "Tiempo: 12 minutos" + "\n" + "Precio : 15 soles" + "\n" + "Dirección: Av Siempre Viva 105 hunter" + "\n" + "Telefono: 9899945" + "\n")
+
                 .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_carwash_verde))
                 .position(carWashRapidito)
                 .flat(true)
@@ -165,10 +165,10 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 TextView txtView = (TextView) popup.findViewById(R.id.titlepopup);
                 ImageView imgView = (ImageView) popup.findViewById(R.id.iconpopup);
                 RatingBar ratingBar = (RatingBar) popup.findViewById(R.id.ratingBar);
+                ImageView imgView2 = (ImageView) popup.findViewById(R.id.imagengrande);
                 txtView.setText(marker.getTitle());
+                imgView2.setImageResource(R.drawable.popup);
                 imgView.setImageResource(R.mipmap.carwashlogo);
-                txtView = (TextView) popup.findViewById(R.id.snippetpopup);
-                txtView.setText(marker.getSnippet());
                 ratingBar.setNumStars(5);
                 ratingBar.setRating(3);
 
