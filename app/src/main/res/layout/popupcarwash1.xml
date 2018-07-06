@@ -4,6 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:background="@color/colorPrimary"
     android:id="@+id/popupprincipal"
     >
 
@@ -12,6 +13,7 @@
         android:layout_width="434dp"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
 
 
         <ImageView
@@ -49,10 +51,12 @@
 
         <Button
             android:id="@+id/btn_reservar"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
             android:layout_gravity="center_horizontal"
-            android:text="RESERVAR" />
+            android:text="RESERVAR"
+            android:textColor="@android:color/white"
+            android:background="@drawable/skygreen"/>
 
     </LinearLayout>
 </LinearLayout>

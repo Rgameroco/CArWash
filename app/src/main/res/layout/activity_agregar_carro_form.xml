@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.rgamero.carwash.AgregarCarroFormActivity">
 
     <TextView
@@ -14,23 +15,25 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
         android:text="Nuevo Carro"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="162dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="80dp"
         android:text="Mis Carros"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +51,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
         android:text="Marca"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/txt_marca"
         app:layout_constraintHorizontal_bias="0.492"
@@ -64,6 +68,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Modelo"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/txt_modelo"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,6 +84,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Forma de Uso"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/spi_uso"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,6 +100,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Año de Fabricacion"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/txt_fecha"
         app:layout_constraintHorizontal_bias="0.4"
@@ -102,16 +109,18 @@
 
     <Button
         android:id="@+id/btn_grabar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
         android:layout_marginBottom="80dp"
         android:layout_marginEnd="56dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="56dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/skygreen"
         android:onClick="Mensaje"
         android:text="Grabar Datos"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -127,6 +136,7 @@
         android:layout_marginRight="56dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:textColor="@android:color/white"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_marca" />
@@ -139,6 +149,7 @@
         android:layout_marginRight="56dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:textColor="@android:color/white"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spi_uso" />
@@ -150,6 +161,7 @@
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@android:color/white"
         app:layout_constraintTop_toBottomOf="@+id/txt_modelo" />
 
     <EditText
@@ -161,19 +173,22 @@
         android:layout_marginTop="64dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@android:color/white"
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <Button
         android:id="@+id/btn_regresar"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="42dp"
         android:layout_marginBottom="80dp"
         android:layout_marginLeft="40dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/skygreen"
         android:text="Regresar"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16"
