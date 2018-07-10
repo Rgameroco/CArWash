@@ -14,7 +14,7 @@ public class PerfilActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
 
-        ImageButton btn1 = (ImageButton ) findViewById(R.id.btn_agregar);
+        Button btn1 = (Button ) findViewById(R.id.btn_agregar);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

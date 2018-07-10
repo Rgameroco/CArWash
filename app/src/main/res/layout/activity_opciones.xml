@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/blancoazul"
+
     android:visibility="visible">
 
     <ImageButton
@@ -70,7 +71,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.26"
         app:srcCompat="@drawable/ic_evaluar" />
-    />
+
 
     <TextView
         android:id="@+id/textView5"
@@ -79,7 +80,7 @@
         android:layout_alignStart="@+id/btn_perfil"
         android:layout_below="@+id/btn_perfil"
         android:text="PERFIL"
-        android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.16"
@@ -95,7 +96,7 @@
         android:layout_below="@+id/btn_perfil"
         android:layout_marginEnd="36dp"
         android:text="FAVORITOS"
-        android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.694"
@@ -111,7 +112,7 @@
         android:layout_alignTop="@+id/textView8"
         android:layout_marginEnd="23dp"
         android:text="BUSCAR CARWASH"
-        android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.865"
@@ -128,7 +129,7 @@
         android:layout_marginBottom="172dp"
         android:layout_marginStart="42dp"
         android:text="EVALUAR CARRO"
-        android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
@@ -160,7 +161,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-73dp"
         android:text="SALIR"
-        android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -173,6 +174,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
         android:text="Opciones" />
 
 

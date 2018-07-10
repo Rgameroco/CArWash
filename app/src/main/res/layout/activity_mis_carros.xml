@@ -4,17 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/blancoazul"
     tools:context="com.example.rgamero.carwash.MisCarrosActivity">
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="256dp"
         android:text="Marca del Vehiculo"
         android:textColor="@android:color/white"
         android:textSize="18sp"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,6 +31,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
         android:text="Modelo"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/cmb_modelo"
@@ -44,6 +48,7 @@
         android:layout_marginTop="72dp"
         android:background="@drawable/skygreen"
         android:text="Regresar"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,6 +67,7 @@
         android:layout_marginTop="72dp"
         android:background="@drawable/skygreen"
         android:text="Grabar Datos"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,19 +76,18 @@
 
     <Spinner
         android:id="@+id/cmb_marca"
-        android:layout_width="199dp"
+        android:layout_width="168dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="256dp"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView20"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
     <TextView
@@ -96,14 +101,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Mis Carros"
-        android:textColor="@android:color/white"
         android:textSize="30sp"
+
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toTopOf="@+id/cmb_marca"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17" />
+        app:layout_constraintVertical_bias="0.542" />
 
     <Spinner
         android:id="@+id/cmb_modelo"
@@ -128,8 +133,10 @@
         android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="Año de Fabricacion"
-        android:textColor="@android:color/white"
         android:inputType="date"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cmb_modelo" />

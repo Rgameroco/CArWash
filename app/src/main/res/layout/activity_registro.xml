@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/blancoazul"
     tools:context="com.example.rgamero.carwash.RegistroActivity">
 
     <ImageView
@@ -15,7 +15,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -29,12 +29,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
         android:hint="Nombres"
-        android:textColor="@android:color/white"
         android:inputType="textPersonName"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -46,12 +47,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Apellidos"
-        android:textColor="@android:color/white"
         android:inputType="textPersonName"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_nombres" />
 
@@ -59,16 +61,20 @@
         android:id="@+id/txt_correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Correo Electronico"
-        android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         android:inputType="textEmailAddress"
+
+        app:layout_constraintBottom_toTopOf="@+id/txt_rcontra"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_apellidos" />
 
@@ -76,18 +82,20 @@
         android:id="@+id/txt_rcontra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="Contraseña"
-        android:textColor="@android:color/white"
         android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintBottom_toTopOf="@+id/editText6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_correo" />
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editText6"
@@ -97,14 +105,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Re-Contraseña"
-        android:textColor="@android:color/white"
         android:inputType="textPassword"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_rcontra" />
+        tools:layout_editor_absoluteY="400dp" />
 
     <Button
         android:id="@+id/btn_can"
@@ -116,6 +123,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/skygreen"
         android:text="Registrarse"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,6 +140,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/skygreen"
         android:text="Cancelar"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_can"
@@ -147,6 +156,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toStartOf="@+id/spinner2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -160,6 +170,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
@@ -173,6 +184,7 @@
         android:layout_marginTop="8dp"
         android:text="Tipo de pago"
         android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText6" />
@@ -185,6 +197,7 @@
         android:layout_marginRight="32dp"
         android:layout_marginTop="12dp"
         android:text="Uso del Vehiculo"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText6" />

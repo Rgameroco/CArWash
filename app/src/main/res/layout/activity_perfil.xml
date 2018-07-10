@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/blancoazul"
     >
 
     <TextView
@@ -17,7 +17,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Mi Perfil"
-        android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,11 +32,12 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="108dp"
         android:text="Nombres"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toStartOf="@+id/txtV_nombreC"
-        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_logo" />
 
@@ -48,6 +49,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
         android:text="Correo Electronico"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtV_nombre" />
@@ -60,6 +62,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="20dp"
         android:text="Contraseña"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtV_correo" />
@@ -75,6 +78,7 @@
         android:layout_marginStart="68dp"
         android:layout_marginTop="8dp"
         android:text="Mis Carros"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cmb_carros"
@@ -87,10 +91,11 @@
         android:id="@+id/txtV_nombreC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="112dp"
-        android:layout_marginRight="112dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="108dp"
         android:text="Juan Perez"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_logo" />
@@ -103,6 +108,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="jperez@ulasalle.edu.pe"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toEndOf="@+id/txtV_correo"
         app:layout_constraintTop_toBottomOf="@+id/txtV_nombreC" />
@@ -112,14 +118,15 @@
         android:layout_width="80dp"
         android:layout_height="22dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginRight="108dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:layout_marginTop="8dp"
         android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.574" />
+        app:layout_constraintVertical_bias="0.635" />
 
     <ImageView
         android:id="@+id/img_logo"
@@ -146,31 +153,35 @@
         android:layout_marginLeft="52dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="*****"
+        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toEndOf="@+id/txtV_password"
         app:layout_constraintTop_toBottomOf="@+id/txtV_email" />
 
-    <ImageButton
+    <Button
         android:id="@+id/btn_agregar"
-        android:layout_width="57dp"
-        android:layout_height="62dp"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="168dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:textColor="@android:color/white"
+        android:layout_marginTop="40dp"
         android:background="@drawable/skygreen"
+        android:text="+"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.974"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cmb_carros"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_agregar" />
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toEndOf="@+id/cmb_carros"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_email"
+        app:layout_constraintVertical_bias="0.01" />
+
 </android.support.constraint.ConstraintLayout>

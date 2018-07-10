@@ -23,10 +23,14 @@
 
     <Button
         android:id="@+id/btn_compararmapa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
         android:layout_above="@+id/navigationubi"
         android:layout_centerHorizontal="true"
-        android:text="COMPARAR" />
+        android:background="@drawable/skygreen"
+        android:text="COMPARAR"
+        android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"/>
+
 
 </RelativeLayout>

@@ -4,7 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/blancoazul"
     android:id="@+id/popupprincipal"
     >
 
@@ -47,14 +47,15 @@
             android:layout_gravity="center_horizontal"
             android:numStars="5"
             android:stepSize="1.0"
-            android:textAlignment="center" />
-
+            android:textAlignment="center"
+/>
         <Button
             android:id="@+id/btn_reservar"
             android:layout_width="100dp"
             android:layout_height="36dp"
             android:layout_gravity="center_horizontal"
             android:text="RESERVAR"
+            app:fontFamily="@font/aclonica"
             android:textColor="@android:color/white"
             android:background="@drawable/skygreen"/>
 
