@@ -65,9 +65,6 @@ public class Ubicacion extends FragmentActivity implements OnMapReadyCallback {
                 case R.id.localizacion:
 
                     return true;
-                case R.id.relocalizacion:
-                    //mTextMessage.setText(R.string.title_notifications);
-                    return true;
             }
             return false;
 
