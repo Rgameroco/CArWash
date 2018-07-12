@@ -78,21 +78,20 @@
         app:layout_constraintEnd_toStartOf="@+id/cmb_tipo"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtV_selec"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/txtV_selec" />
 
     <Spinner
         android:id="@+id/cmb_seleccion"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:textColor="@android:color/white"
-        app:fontFamily="@font/aclonica"
         android:visibility="visible"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toTopOf="@+id/cmb_tipo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.966"
@@ -103,7 +102,7 @@
         android:id="@+id/cmb_tipo"
         android:layout_width="130dp"
         android:layout_height="24dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="16dp"
@@ -120,7 +119,7 @@
         android:id="@+id/txtV_testimado"
         android:layout_width="173dp"
         android:layout_height="29dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="84dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="44dp"
         android:layout_marginRight="8dp"
@@ -132,10 +131,10 @@
         app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.789" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_TextDateTime"
+        app:layout_constraintVertical_bias="0.411" />
 
     <TextView
         android:id="@+id/txtV_precio"
@@ -148,15 +147,15 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="8dp"
         android:text="Precio estimado"
-        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
         android:textSize="18sp"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.851" />
+        app:layout_constraintVertical_bias="0.895" />
 
     <TextView
         android:id="@+id/textView"
@@ -169,14 +168,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="10 Soles"
-        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853" />
+        app:layout_constraintVertical_bias="0.887" />
 
     <TextView
         android:id="@+id/textView2"
@@ -189,14 +188,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="15 Minutos"
-        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
+        app:layout_constraintVertical_bias="0.818" />
 
     <TextView
         android:id="@+id/txt_TextDateTime"
@@ -207,29 +206,28 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:text="Esperando Fecha y Hora"
-        app:fontFamily="@font/aclonica"
         android:textAlignment="center"
         android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_datePicker"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_datePicker"
         android:layout_width="158dp"
-        android:layout_height="32dp"
+        android:layout_height="33dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="180dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/skygreen"
         android:text="Seleccion Fecha"
         android:textColor="@android:color/white"
@@ -237,9 +235,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.635" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_timePicker"
@@ -247,7 +243,7 @@
         android:layout_height="32dp"
         android:layout_below="@+id/btn_datePicker"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="180dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -262,7 +258,7 @@
         app:layout_constraintHorizontal_bias="0.962"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.635" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn_registrarReserva"
