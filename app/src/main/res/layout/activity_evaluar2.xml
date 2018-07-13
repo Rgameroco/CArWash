@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
 
-    android:background="@drawable/blancoazul"
+    android:background="@drawable/blancoazulx2"
     android:layout_height="match_parent"
     tools:context="com.example.rgamero.carwash.Evaluar2Activity">
 
@@ -38,6 +38,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="0 a 2 Casa"
+        android:textColor="@android:color/white"
         app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,6 +58,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:text="3 a 4 Lava Carros"
+        android:textColor="@android:color/white"
         app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,6 +78,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="4 a mas CarWash"
+        android:textColor="@android:color/white"
         app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
