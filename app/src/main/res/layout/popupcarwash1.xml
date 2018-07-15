@@ -49,15 +49,16 @@
             android:stepSize="1.0"
             android:textAlignment="center"
 />
+
         <Button
             android:id="@+id/btn_reservar"
-            android:layout_width="100dp"
+            android:layout_width="122dp"
             android:layout_height="36dp"
             android:layout_gravity="center_horizontal"
-            android:text="RESERVAR"
-            app:fontFamily="@font/aclonica"
+            android:background="@drawable/naranja"
+            android:text="MAS INFORMACION"
             android:textColor="@android:color/white"
-            android:background="@drawable/naranja"/>
+            app:fontFamily="@font/aclonica" />
 
     </LinearLayout>
 </LinearLayout>

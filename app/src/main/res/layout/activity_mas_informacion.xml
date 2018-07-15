@@ -39,24 +39,117 @@
         app:layout_constraintVertical_bias="0.101"
         app:srcCompat="@mipmap/splishsplashcarwash" />
 
-    <ListView
-        android:id="@+id/list_info"
-        android:layout_width="368dp"
-        android:layout_height="227dp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-
-        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_carwash"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLavadoSimple1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Lavado Simple"
+                android:fontFamily="@font/aclonica"></TextView>
+            <TextView
+                android:id="@+id/txtPrecio1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Precio : 10 Soles"
+                android:fontFamily="@font/aclonica"></TextView>
+            <TextView
+                android:id="@+id/txtLavadoSimple"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Lavado Simple"></TextView>
+            <TextView
+                android:id="@+id/txtPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Precio : 10 Soles"></TextView><TextView
+            android:id="@+id/txtLavadoSimple2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Lavado Simple"></TextView>
+            <TextView
+                android:id="@+id/txtPrecio2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Precio : 10 Soles"></TextView><TextView
+            android:id="@+id/txtLavadoSimple3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Lavado Simple"></TextView>
+            <TextView
+                android:id="@+id/txtPrecio3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Precio : 10 Soles"></TextView><TextView
+            android:id="@+id/txtLavadoSimple4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Lavado Simple"></TextView>
+            <TextView
+                android:id="@+id/txtPrecio4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Precio : 10 Soles"></TextView><TextView
+            android:id="@+id/txtLavadoSimple5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Lavado Simple"></TextView>
+            <TextView
+                android:id="@+id/txtPrecio5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Precio : 10 Soles"></TextView>
+            <TextView
+                android:id="@+id/txtPrecio6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Precio : 10 Soles"></TextView>
+            <TextView
+            android:id="@+id/txtLavadoSimple7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Lavado Simple"></TextView>
+            <TextView
+                android:id="@+id/txtPrecio7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Precio : 10 Soles"></TextView>
+            <TextView
+                android:id="@+id/txtLavadoSimple8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Lavado Simple"></TextView>
+            <TextView
+                android:id="@+id/txtPrecio8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Precio : 10 Soles"></TextView>
+
+            <TextView
+                android:id="@+id/txtLavadoSimple9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Lavado Simple"></TextView>
+            <TextView
+                android:id="@+id/txtPrecio9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Precio : 10 Soles"></TextView>
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/btn_cancelarmasinfo"
@@ -67,17 +160,14 @@
         android:layout_marginLeft="64dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/naranja"
         android:text="Cancelar"
-        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list_info"
-        app:layout_constraintVertical_bias="0.484" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_reservarmasinfo"
@@ -88,7 +178,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/naranja"
         android:text="Reservar"
         android:textColor="@android:color/white"
@@ -96,8 +185,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.585"
-        app:layout_constraintStart_toEndOf="@+id/btn_cancelarmasinfo"
-        app:layout_constraintTop_toBottomOf="@+id/list_info" />
+        app:layout_constraintStart_toEndOf="@+id/btn_cancelarmasinfo" />
 
 
 </android.support.constraint.ConstraintLayout>

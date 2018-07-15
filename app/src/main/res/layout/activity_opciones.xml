@@ -139,7 +139,7 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton6image"
+        android:id="@+id/btn_salir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -157,7 +157,7 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton6image"
+        android:layout_below="@+id/btn_salir"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-73dp"
         android:text="SALIR"

@@ -1,6 +1,7 @@
 package com.example.rgamero.carwash;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -66,6 +67,13 @@ public class Opciones extends AppCompatActivity {
         });
 
 
-
+        ImageButton btn5 = (ImageButton) findViewById(R.id.btn_salir);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.exit(0);
+                finish();
+            }
+        });
     }
 }

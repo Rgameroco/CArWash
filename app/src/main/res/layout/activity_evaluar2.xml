@@ -37,15 +37,15 @@
         android:layout_marginRight="156dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="0 a 2 Casa"
 
+        android:text="0 a 2 Casa"
         app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_auto"
-        app:layout_constraintVertical_bias="0.235" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
 
     <TextView
         android:id="@+id/textView29"
@@ -98,7 +98,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/naranja"
-        android:text="Listo"
+        android:text="Hecho"
         android:textColor="@android:color/white"
         app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -155,10 +155,10 @@
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView28"
-        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintHorizontal_bias="0.656"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_auto"
-        app:layout_constraintVertical_bias="0.715"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86"
         app:srcCompat="@mipmap/puntorojo" />
 
     <ImageView

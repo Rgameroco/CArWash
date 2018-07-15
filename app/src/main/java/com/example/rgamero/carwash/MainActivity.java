@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView textView = (TextView) findViewById(R.id.txt_registrar);
+
+
     }
 
 }
