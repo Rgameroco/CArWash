@@ -4,7 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="@drawable/blancoazulx2pq"
+    android:background="@drawable/azul4pq"
     android:id="@+id/popupprincipal"
     >
 
@@ -57,7 +57,7 @@
             android:text="RESERVAR"
             app:fontFamily="@font/aclonica"
             android:textColor="@android:color/white"
-            android:background="@drawable/skygreen"/>
+            android:background="@drawable/naranja"/>
 
     </LinearLayout>
 </LinearLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blancoazulx2"
+    android:background="@drawable/azul4"
     tools:context="com.example.rgamero.carwash.FavoritosActivity">
 
     <TextView
@@ -35,7 +35,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
-        android:background="@drawable/skygreen"
+        android:background="@drawable/naranja"
         android:text="Agregar Favoritos"
         android:textColor="@android:color/white"
         android:textSize="24sp"

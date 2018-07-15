@@ -27,7 +27,7 @@
         android:layout_height="41dp"
         android:layout_above="@+id/navigationubi"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/skygreen"
+        android:background="@drawable/naranja"
         android:text="COMPARAR"
         android:textColor="@android:color/white"
         app:fontFamily="@font/aclonica"/>

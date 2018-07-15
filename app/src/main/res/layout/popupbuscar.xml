@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/blancoazulx2"
+    android:background="@drawable/azul4"
     android:layout_height="match_parent"
     >
 
@@ -25,7 +25,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
         android:text="*Recuerde que puede buscar por lugar,nombre o direccion"
-        android:textColor="@android:color/white"
+
         app:fontFamily="@font/aclonica"
         android:visibility="visible"
         android:textAlignment="center"/>

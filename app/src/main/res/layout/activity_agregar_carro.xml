@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blancoazulx2"
+    android:background="@drawable/azul4"
     tools:context="com.example.rgamero.carwash.AgregarCarroActivity">
 
     <TextView
@@ -34,7 +34,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="72dp"
-        android:background="@drawable/skygreen"
+        android:background="@drawable/naranja"
         android:text="Agregar Nuevo Carro"
         android:textColor="@android:color/white"
         android:textSize="30sp"

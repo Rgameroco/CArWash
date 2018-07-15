@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blancoazulx2"
+    android:background="@drawable/azul4"
     tools:context="com.example.rgamero.carwash.RegistroActivity">
 
     <ImageView
@@ -121,7 +121,7 @@
         android:layout_marginLeft="84dp"
         android:layout_marginStart="84dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/skygreen"
+        android:background="@drawable/naranja"
         android:text="Registrarse"
         app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
@@ -138,7 +138,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/skygreen"
+        android:background="@drawable/naranja"
         android:text="Cancelar"
         app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
@@ -155,7 +155,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:textColor="@android:color/white"
+
         app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toStartOf="@+id/spinner2"
         app:layout_constraintStart_toStartOf="parent"
@@ -169,7 +169,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@android:color/white"
+
         app:fontFamily="@font/aclonica"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -183,7 +183,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Tipo de pago"
-        android:textColor="@android:color/white"
+
         app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
@@ -198,7 +198,6 @@
         android:layout_marginTop="12dp"
         android:text="Uso del Vehiculo"
         app:fontFamily="@font/aclonica"
-        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText6" />
 

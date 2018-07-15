@@ -4,7 +4,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-    android:background="@drawable/blancoazulx2"
+    android:background="@drawable/azul4"
 
     >
 
@@ -33,7 +33,7 @@ android:layout_height="match_parent"
         android:layout_marginStart="31dp"
         android:text="CANCELAR"
         app:fontFamily="@font/aclonica"
-        android:background="@drawable/skygreen"
+        android:background="@drawable/naranja"
         android:textColor="@android:color/white"/>
 
     <Button
@@ -45,7 +45,7 @@ android:layout_height="match_parent"
         android:layout_marginEnd="26dp"
         android:text="RESERVAR"
         app:fontFamily="@font/aclonica"
-        android:background="@drawable/skygreen"
+        android:background="@drawable/naranja"
         android:textColor="@android:color/white"/>
 
     <TextView

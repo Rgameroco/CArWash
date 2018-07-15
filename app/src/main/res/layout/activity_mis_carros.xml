@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blancoazulx2"
+    android:background="@drawable/azul4"
     tools:context="com.example.rgamero.carwash.MisCarrosActivity">
 
     <TextView
@@ -15,7 +15,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="256dp"
         android:text="Marca del Vehiculo"
-        android:textColor="@android:color/white"
+
         android:textSize="18sp"
         app:fontFamily="@font/aclonica"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         android:layout_marginTop="28dp"
         android:text="Modelo"
         app:fontFamily="@font/aclonica"
-        android:textColor="@android:color/white"
+
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/cmb_modelo"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
         android:layout_marginLeft="68dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="72dp"
-        android:background="@drawable/skygreen"
+        android:background="@drawable/naranja"
         android:text="Regresar"
         app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
@@ -65,7 +65,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="72dp"
-        android:background="@drawable/skygreen"
+        android:background="@drawable/naranja"
         android:text="Grabar Datos"
         app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
@@ -134,8 +134,6 @@
         android:ems="10"
         android:hint="Año de Fabricacion"
         android:inputType="date"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white"
         app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

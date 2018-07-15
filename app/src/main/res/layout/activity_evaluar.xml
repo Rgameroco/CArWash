@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/blancoazulx2"
+    android:background="@drawable/azul4"
     tools:context="com.example.rgamero.carwash.EvaluarActivity">
 
     <TextView

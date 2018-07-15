@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blancoazulx2"
+    android:background="@drawable/azul4"
     tools:context="com.example.rgamero.carwash.AgregarCarroFormActivity">
 
     <TextView
@@ -122,7 +122,7 @@
         android:layout_marginRight="56dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/skygreen"
+        android:background="@drawable/naranja"
         android:onClick="Mensaje"
         android:text="Grabar Datos"
         android:textColor="@android:color/white"
@@ -193,7 +193,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/skygreen"
+        android:background="@drawable/naranja"
         android:text="Regresar"
         app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
