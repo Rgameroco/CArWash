@@ -15,4 +15,9 @@
         <item>Lavado Salon 15 soles </item>
         <item>Lavado Completo 20 soles</item>
     </string-array>
+    <string-array name="opcionesTipoUso">
+        <item>Mineria</item>
+        <item>Particular</item>
+        <item>Movilidad</item>
+    </string-array>
 </resources>

@@ -26,13 +26,18 @@ public class AgregarCarroFormActivity extends AppCompatActivity {
 
             }
         });
-
-        Spinner spinner =(Spinner) findViewById(R.id.spi_uso);
-        String [] Opciones ={"Paticular","Movilidad","Mineria","Transporte"};
-        spinner.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item));
+        llenarSpinner();
     }
 
     public void Mensaje(View view){
         Toast.makeText(this , "Carro Guardado", Toast.LENGTH_SHORT);
+    }
+
+    public void llenarSpinner() {
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.opcionesTipoUso, android.R.layout.simple_spinner_item);
+        Spinner opciones = (Spinner) findViewById(R.id.spi_uso);
+        opciones.setAdapter(adapter);
+        adapter.setDropDownViewResource(android.R.layout.preference_category);
+
     }
 }
