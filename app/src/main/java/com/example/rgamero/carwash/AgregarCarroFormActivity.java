@@ -23,6 +23,7 @@ public class AgregarCarroFormActivity extends AppCompatActivity {
                 Intent intent = new Intent(v.getContext(),Ubicacion.class);
                 startActivityForResult(intent,0);
 
+
             }
         });
 

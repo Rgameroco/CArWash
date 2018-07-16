@@ -52,13 +52,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="48dp"
         android:text="Marca"
 
         android:textSize="18sp"
         app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toStartOf="@+id/txt_marca"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.801"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -70,12 +70,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        app:fontFamily="@font/aclonica"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="Modelo"
 
         android:textSize="18sp"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toStartOf="@+id/txt_modelo"
+        app:layout_constraintHorizontal_bias="0.817"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -84,14 +85,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Forma de Uso"
-        app:fontFamily="@font/aclonica"
         android:textSize="18sp"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toStartOf="@+id/spi_uso"
+        app:layout_constraintHorizontal_bias="0.626"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -103,12 +105,12 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:text="Año de Fabricacion"
-        app:fontFamily="@font/aclonica"
         android:textSize="18sp"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toStartOf="@+id/txt_fecha"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -116,12 +118,11 @@
         android:id="@+id/btn_grabar"
         android:layout_width="128dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="56dp"
         android:layout_marginEnd="56dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="56dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/naranja"
         android:onClick="Mensaje"
         android:text="Grabar Datos"
@@ -131,19 +132,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btn_regresar"
-        app:layout_constraintTop_toBottomOf="@+id/txt_fecha"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toEndOf="@+id/btn_regresar" />
 
     <EditText
         android:id="@+id/txt_modelo"
         android:layout_width="126dp"
-        android:layout_height="28dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
-
+        android:hint="Sedan"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_marca" />
@@ -151,12 +150,13 @@
     <EditText
         android:id="@+id/txt_fecha"
         android:layout_width="126dp"
-        android:layout_height="26dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
 
+        android:ems="10"
+        android:hint="15/30/2013"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spi_uso" />
@@ -164,24 +164,25 @@
     <Spinner
         android:id="@+id/spi_uso"
         android:layout_width="126dp"
-        android:layout_height="26dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="28dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
         app:fontFamily="@font/aclonica"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_modelo" />
 
     <EditText
         android:id="@+id/txt_marca"
         android:layout_width="126dp"
-        android:layout_height="26dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:layout_marginTop="64dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
-        android:inputType="textPersonName"
-
-        android:text="Name"
+        android:hint="Toyota"
+        android:inputType="text"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -189,17 +190,14 @@
         android:id="@+id/btn_regresar"
         android:layout_width="131dp"
         android:layout_height="42dp"
-        android:layout_marginBottom="80dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
         android:background="@drawable/naranja"
         android:text="Regresar"
-        app:fontFamily="@font/aclonica"
         android:textColor="@android:color/white"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

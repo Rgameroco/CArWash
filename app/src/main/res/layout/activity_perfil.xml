@@ -29,15 +29,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+
         android:text="Nombres"
         app:fontFamily="@font/aclonica"
-
         app:layout_constraintEnd_toStartOf="@+id/txtV_nombreC"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_logo" />
 
@@ -45,9 +45,7 @@
         android:id="@+id/txtV_correo"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:text="Correo Electronico"
         app:fontFamily="@font/aclonica"
 
@@ -58,9 +56,9 @@
         android:id="@+id/txtV_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="64dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
         android:text="Contraseña"
         app:fontFamily="@font/aclonica"
 
@@ -85,15 +83,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtV_password"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtV_nombreC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
-        android:layout_marginRight="120dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="100dp"
         android:text="Juan Perez"
         app:fontFamily="@font/aclonica"
 
@@ -106,7 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:text="jperez@ulasalle.edu.pe"
         app:fontFamily="@font/aclonica"
 
@@ -118,15 +116,15 @@
         android:layout_width="80dp"
         android:layout_height="22dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
         android:layout_marginTop="8dp"
 
         app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.635" />
+        app:layout_constraintVertical_bias="0.587" />
 
     <ImageView
         android:id="@+id/img_logo"
@@ -149,17 +147,13 @@
         android:id="@+id/txtV_contra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginRight="192dp"
+        android:layout_marginTop="12dp"
         android:text="*****"
-        app:fontFamily="@font/aclonica"
 
+        app:fontFamily="@font/aclonica"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toEndOf="@+id/txtV_password"
         app:layout_constraintTop_toBottomOf="@+id/txtV_email" />
 
     <Button
